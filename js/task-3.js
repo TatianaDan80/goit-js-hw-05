@@ -1,5 +1,5 @@
-const sortByDescendingFriendCount = users => 
-  [...users].sort((a, b) => b.friends.length - a.friends.length);
+const sortByDescendingFriendCount = users =>
+  users.slice().sort((a, b) => b.friends.length - a.friends.length);
 
 
 console.log(
@@ -78,4 +78,3 @@ console.log(
 //     gender: "male"
 //   }
 // ]
-
