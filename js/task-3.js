@@ -1,10 +1,6 @@
-
-Array.prototype.toSorted = function(compareFunction) {
-  return [...this].sort(compareFunction);
-};
-
 const sortByDescendingFriendCount = users =>
   users.toSorted((a, b) => b.friends.length - a.friends.length);
+
 
 console.log(
   sortByDescendingFriendCount([
@@ -45,7 +41,7 @@ console.log(
     }
   ])
 );
-
+// Очікуваний результат:
 // [
 //   {
 //     name: "Ross Vazquez",
@@ -83,3 +79,4 @@ console.log(
 //     gender: "male"
 //   }
 // ]
+
